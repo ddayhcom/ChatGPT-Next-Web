@@ -140,7 +140,9 @@ export function SideBar(props: { className?: string }) {
     () => isIOS() && isMobileScreen,
     [isMobileScreen],
   );
+
   useHotKey();
+
   return (
     <div
       className={`${styles.sidebar} ${props.className} ${
@@ -215,7 +217,7 @@ export function SideBar(props: { className?: string }) {
             </Link>
           </div>
           <div className={styles["sidebar-action"]}>
-            <a href={www.ddayh.com} target="_blank" rel="noopener noreferrer">
+            <a href={REPO_URL} target="_blank" rel="noopener noreferrer">
               <IconButton icon={<GithubIcon />} shadow />
             </a>
           </div>
